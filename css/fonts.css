@@ -1,0 +1,19 @@
+@font-face{
+	font-family: Montserrat-Thin;
+	src: url(../fonts/MONTSERRAT/Montserrat-Thin.otf) format("opentype");
+}
+
+@font-face{
+	font-family: Montserrat-Black;
+	src: url(../fonts/MONTSERRAT/Montserrat-Black.otf) format("opentype");
+}
+
+@font-face{
+	font-family: AlexBrush-Regular;
+	src: url(../fonts/MONTSERRAT/AlexBrush-Regular.ttf);
+}
+
+@font-face{
+	font-family: Montserrat-Bold;
+	src: url(../fonts/MONTSERRAT/Montserrat-SemiBold.otf) format("opentype");
+}
