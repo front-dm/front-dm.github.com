@@ -340,3 +340,51 @@ nav{
 	left: 105px;
 }
 
+/*BLOCK TEAM*/
+.block_team{
+	text-align: center;
+}
+
+.block_team img{
+	padding: 7px;
+	background-color: #fff;
+}
+
+.block_team h3{
+	font-family: Montserrat-Bold;
+}
+
+.block_team p{
+	color: #777777;
+	font-size: 16px;
+}
+
+.block_team i{
+	width: 39px;
+	height: 39px;
+	font-size: 20px;
+	background-color: #000;
+	color: #fff;
+	padding: 10px;
+	border-radius: 50%;
+}
+
+.block_team i:hover{
+	background-color: #FED136;
+	-webkit-transition: all .25s;
+	   -moz-transition: all .25s;
+	    -ms-transition: all .25s;
+	     -o-transition: all .25s;
+	        transition: all .25s;
+}
+
+.text_bot_team{
+	color: #777777;
+	font-size: 17px;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.block_company{
+	padding: 50px 0 50px 0;
+}

@@ -106,6 +106,22 @@
 		padding-bottom: 30px;
 	}
 
+	.mb50{
+		margin-bottom: 50px;
+	}
+
+	.mt100{
+		margin-top: 150px;
+	}
+
+	.block_company div{
+		text-align: center;
+	}
+
+	.block_company div img{
+		margin-bottom: 20px;
+	}
+
 }
 
 /* Extra Small Devices, Phones */
@@ -191,6 +207,22 @@
 		height: 550px;
 	}
 
+	.mb50{
+		margin-bottom: 50px;
+	}
+
+	.mt100{
+		margin-top: 150px;
+	}
+
+	.block_company div{
+		text-align: center;
+	}
+
+	.block_company div img{
+		margin-bottom: 20px;
+	}
+
 }
 
 /* Custom, iPhone Retina */
@@ -274,5 +306,21 @@
 
 	.vert_line_xs{
 		height: 550px;
+	}
+
+	.mb50{
+		margin-bottom: 50px;
+	}
+
+	.mt100{
+		margin-top: 150px;
+	}
+
+	.block_company div{
+		text-align: center;
+	}
+
+	.block_company div img{
+		margin-bottom: 20px;
 	}
 }
