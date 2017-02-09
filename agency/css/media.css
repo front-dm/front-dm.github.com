@@ -122,6 +122,14 @@
 		margin-bottom: 20px;
 	}
 
+	.footer div{
+		margin-bottom: 10px;
+	}
+
+	.footer{
+		line-height: 2;
+	}
+
 }
 
 /* Extra Small Devices, Phones */
@@ -221,6 +229,14 @@
 
 	.block_company div img{
 		margin-bottom: 20px;
+	}
+
+	.footer div{
+		margin-bottom: 10px;
+	}
+
+	.footer{
+		line-height: 2;
 	}
 
 }
@@ -323,4 +339,12 @@
 	.block_company div img{
 		margin-bottom: 20px;
 	}
-}
+
+	.footer div{
+		m1rgin-bottom: 30px;
+	}
+
+	.footer{
+		line-height: 2;
+	}
+}1
