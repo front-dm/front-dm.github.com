@@ -68,6 +68,14 @@
 		font-size: 32px;
 	}
 
+	.block_get_started{
+		text-align: center;
+	}
+
+	.block_get_started h3{
+		font-size: 60px;	
+	}
+
 
 }
 
@@ -112,6 +120,18 @@
 		font-size: 32px;
 	}
 
+	.block_get_started{
+		text-align: center;
+	}
+
+	.block_get_started h3{
+		font-size: 40px;	
+	}
+
+	.block_get_started button{
+		padding: 20px 20px;
+	}
+
 }
 
 @media only screen and (max-width : 320px) {
@@ -153,6 +173,18 @@
 
 	.features_desc h3{
 		font-size: 32px;
+	}
+
+	.block_get_started{
+		text-align: center;
+	}
+
+	.block_get_started h3{
+		font-size: 40px;	
+	}
+
+	.block_get_started button{
+		padding: 20px 20px;
 	}
 
 }
