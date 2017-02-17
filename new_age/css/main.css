@@ -4,6 +4,7 @@ body {
 	width: 100%;
 	height: 100%;			
 	position: absolute;
+	
 }
 
 header{
@@ -195,4 +196,85 @@ nav{
 	    -ms-transition: all .55s;
 	     -o-transition: all .55s;
 	        transition: all .55s;
+}
+
+/*SECTIONS FRINDS*/
+.block_friends{
+	background-color: #FDC844;
+	padding: 70px 0;
+	text-align: center;
+}
+
+.block_friends p{
+	color: #fff;
+	font-size: 44px;
+	font-family: Lato-Light;
+}
+
+.block_friends i{
+	color: #DD4B39;
+}
+
+.social i{
+	color: #fff;
+	font-size: 40px;
+	padding: 20px;
+	border-radius: 50%;
+	margin-right: 20px;
+	-webkit-transition: all .55s;
+	   -moz-transition: all .55s;
+	    -ms-transition: all .55s;
+	     -o-transition: all .55s;
+	        transition: all .55s;
+}
+
+.i_twitter{
+	background-color: #1DA1F2;
+}
+
+.i_twitter:hover{
+	background-color: #1983c1;
+}
+
+.i_facebook{
+	background-color: #3B5998;
+	width: 80px;
+}
+
+.i_facebook:hover{
+	background-color: #263b63;
+}
+
+.i_google{
+	background-color: #DD4B39;
+	width: 80px;
+}
+
+.i_google:hover{
+	background-color: #b73d2f;
+}
+
+/*FOOTER*/
+.footer{
+	background-color: #222222;
+	padding: 30px 0;
+	color: #636363;
+	font-family: Lato;
+	text-align: center;
+	line-height: 10px;
+}
+
+.footer a{
+	padding: 0 8px;
+	color: #636363;
+	-webkit-transition: all .55s;
+	   -moz-transition: all .55s;
+	    -ms-transition: all .55s;
+	     -o-transition: all .55s;
+	        transition: all .55s;
+}
+
+.footer a:hover{
+	color: #FDC844;
+	text-decoration: none;
 }

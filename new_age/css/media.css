@@ -132,6 +132,10 @@
 		padding: 20px 20px;
 	}
 
+	.block_friends p{
+		font-size: 30px;
+	}
+
 }
 
 @media only screen and (max-width : 320px) {
@@ -185,6 +189,10 @@
 
 	.block_get_started button{
 		padding: 20px 20px;
+	}
+
+	.block_friends p{
+		font-size: 30px;
 	}
 
 }
