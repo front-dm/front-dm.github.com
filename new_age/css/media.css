@@ -76,6 +76,16 @@
 		font-size: 60px;	
 	}
 
+	.menu li{
+		display: block;
+		height: 50px;
+		margin-left: -20px;
+	}
+
+	.menu li a:hover{
+		color: #FDC844;;
+	}
+
 
 }
 
@@ -136,6 +146,16 @@
 		font-size: 30px;
 	}
 
+	.menu li{
+		display: block;
+		height: 50px;
+		margin-left: -20px;
+	}
+
+	.menu li a:hover{
+		color: #FDC844;;
+	}
+
 }
 
 @media only screen and (max-width : 320px) {
@@ -193,6 +213,16 @@
 
 	.block_friends p{
 		font-size: 30px;
+	}
+
+	.menu li{
+		display: block;
+		height: 50px;
+		margin-left: -20px;
+	}
+
+	.menu li a:hover{
+		color: #FDC844;;
 	}
 
 }

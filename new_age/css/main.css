@@ -4,7 +4,7 @@ body {
 	width: 100%;
 	height: 100%;			
 	position: absolute;
-	
+
 }
 
 header{
@@ -20,6 +20,7 @@ header{
 
 nav{
 	background-color: #000;
+	
 }
 
 
@@ -32,6 +33,10 @@ nav{
 
 .logo:hover{
 	color: #e1e1e1;
+}
+
+.btn_menu{
+	color: #fff;
 }
 
 .menu li{
