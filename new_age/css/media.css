@@ -1,0 +1,160 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.header_block p{
+		font-size: 40px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.header_block p{
+		font-size: 40px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+	header{
+		height: 900px;
+	}
+
+	.header_block p{
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.header_block button{
+		width: 100%;
+	}
+
+
+	.header_block div img{
+		width: 80%;
+	}
+
+	.discover_desc h3{
+		font-size: 40px;
+	}
+
+	.items_features img{
+		width: 50%;
+		margin: auto;
+	}
+
+	.features_desc h3{
+		font-size: 32px;
+	}
+
+
+}
+
+@media only screen and (max-width : 480px) {
+	
+
+	header{
+		height: 900px;
+	}
+
+	.header_block p{
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.header_block button{
+		width: 100%;
+	}
+
+	.header_block img{
+		width: 50%;
+	}
+
+	.header_block button{
+		padding: 20px 20px;
+	}
+
+	.header_block div img{
+		width: 70%;
+	}
+
+	.discover_desc h3{
+		font-size: 40px;
+	}
+
+	.items_features img{
+		width: 50%;
+		margin: auto;
+	}
+
+	.features_desc h3{
+		font-size: 32px;
+	}
+
+}
+
+@media only screen and (max-width : 320px) {
+	
+
+	header{
+		height: 600px;
+	}
+
+	.header_block p{
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.header_block button{
+		width: 100%;
+	}
+
+	.header_block img{
+		width: 50%;
+	}
+
+	.header_block button{
+		padding: 20px 20px;
+	}
+
+	.header_block div img{
+		display: none;
+	}
+
+	.discover_desc h3{
+		font-size: 32px;
+	}
+
+	.items_features img{
+		width: 50%;
+		margin: auto;
+	}
+
+	.features_desc h3{
+		font-size: 32px;
+	}
+
+}
+
+
