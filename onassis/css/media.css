@@ -5,7 +5,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	.title-about p{
+			padding: 30px 0;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -33,16 +35,35 @@
 		animation: none !important;
 	}
 
+	.title-about p{
+		padding: 0;
+	}
+
+	.items-work img{
+		margin-bottom: 30px;
+	}
 }
 
 @media only screen and (max-width : 480px) {
 	
+	.title-about p{
+		padding: 0;
+	}
 
+	.items-work img{
+		margin-bottom: 30px;
+	}
 }
 
 @media only screen and (max-width : 320px) {
 	
+	.title-about p{
+		padding: 0;
+	}
 
+	.items-work img{
+		margin-bottom: 30px;
+	}
 }
 
 
