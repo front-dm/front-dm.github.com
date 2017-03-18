@@ -9,6 +9,19 @@
 		font-size: 18px;
 		padding: 6px 8px;
 	}
+
+	.item-carousel .wrap h3{
+		font-size: 18px;
+		margin-top: 30%;
+	}
+
+	.item-carousel .wrap p{
+		font-size: 16px;
+	}
+
+	.item-carousel .wrap i{
+		font-size: 14px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -106,6 +119,20 @@
 		padding: 6px 8px;
 	}
 
+	.item-carousel .wrap h3{
+		font-size: 18px;
+		margin-top: 30%;
+	}
+
+	.item-carousel .wrap p{
+		font-size: 14px;
+	}
+
+	.item-carousel .wrap i{
+		font-size: 14px;
+	}
+}
+
 @media only screen and (max-width : 480px) {
 	
 	/*TOP MENU*/
@@ -187,6 +214,19 @@
 		min-width: 200px;
 		min-height: 200px;
 		background-size: cover;
+	}
+
+	.item-carousel .wrap h3{
+		font-size: 16px;
+		margin-top: 30%;
+	}
+
+	.item-carousel .wrap p{
+		font-size: 12px;
+	}
+
+	.item-carousel .wrap i{
+		font-size: 12px;
 	}
 }
 

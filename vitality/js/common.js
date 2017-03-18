@@ -15,11 +15,7 @@ $(document).ready(function(){
             800:{
                 items:3
             },
-            1000:{
-                items:4
-            }
         },
-        dots: true,
         loop: true
     });
 
