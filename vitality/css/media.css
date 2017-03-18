@@ -182,5 +182,11 @@
 	.title-blocks h3{
 		font-size: 38px;
 	}
+
+	.item-carousel img{
+		min-width: 200px;
+		min-height: 200px;
+		background-size: cover;
+	}
 }
 
