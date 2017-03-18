@@ -177,5 +177,10 @@
 		width: 160px;
 		margin-top: 5px;
 	}
+
+	/*ABOUT*/
+	.title-blocks h3{
+		font-size: 38px;
+	}
 }
 

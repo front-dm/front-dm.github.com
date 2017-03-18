@@ -16,6 +16,29 @@ header{
 	position:relative;
 }
 
+
+/*=====COMMON=========*/
+
+.title-blocks{
+	text-align: center;
+	color: #333333;
+}
+
+.title-blocks h3{
+	font-size: 52px;
+	font-family: Roboto-Black;
+	font-weight: 900;
+
+}
+
+.title-blocks p{
+	font-size: 18px;
+	font-family: Roboto-Regular;
+	color: #545454;
+}
+
+/*========================*/
+
 /*MENU-TOP*/
 .block_top{
 	margin-top: 30px;
@@ -78,7 +101,7 @@ header{
 .scroll-down{
   	position: absolute;
   	text-align: center;
-  	bottom: 20px;
+  	bottom: 30px;
   	width: 100%;
 }
 
@@ -101,5 +124,27 @@ header{
 .line-horiz{
 	margin: 3px auto;
   	max-width: 200px;
+}
+
+/*ABOUT*/
+#about{
+	padding: 70px 0;
+}
+
+.item-about{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.item-about h3{
+	text-transform: uppercase;
+	font-family: Roboto-Black;
+}
+
+.item-about p{
+	font-size: 18px;
+	color: #545454;
+	font-family: Roboto-Regular;
+	padding: 0 30px;
 }
 
