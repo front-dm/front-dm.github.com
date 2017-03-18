@@ -51,11 +51,16 @@ header{
 .title-top{
 	text-align: center;
 	color: #fff;
+	position: absolute;;
+	top: 50%;
+    left: 50%;
+    height: 30%;
+    width: 50%;
+    margin: -15% 0 0 -25%;
 }
 
 .title-top img{
 	width: 200px;
-	margin-top: 150px;
 }
 
 .title-top h3{
@@ -94,10 +99,7 @@ header{
 }
 
 .line-horiz{
-	width: 200px;
-	height: 2px;
-	background-color: #fff;
-	content: '';
-	margin: 4px auto;
+	margin: 3px auto;
+  	max-width: 200px;
 }
 

@@ -5,7 +5,10 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	
+	.scroll-down .btn_down{
+		font-size: 18px;
+		padding: 6px 8px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -50,6 +53,16 @@
 		color: #e5e5e5;
 		border-radius: 5px;
 		border: 1px solid #494949;
+		-webkit-transition: all .5s;
+		   -moz-transition: all .5s;
+		    -ms-transition: all .5s;
+		     -o-transition: all .5s;
+		        transition: all .5s;
+	}
+
+	.btn_menu i:hover{
+		background-color: #fff;
+		color: #222;
 	}
 
 	.menu-top li{
@@ -60,7 +73,38 @@
 		margin-left: -50px;
 	}
 
-}
+	.title-top{
+		text-align: center;
+		color: #fff;
+		position: absolute;;
+		top: 30%;
+	    left: 50%;
+	    height: 20%;
+	    width: 50%;
+	    margin: -10% 0 0 -25%;
+	}
+
+	.title-top h3{
+		font-size: 50px;
+	}
+
+	.title-top p{
+		font-size: 20px;
+	}
+
+	.title-top img{
+		width: 150px;
+	}
+
+	.line-horiz{
+		margin: 3px auto;
+  		max-width: 150px;
+	}
+
+	.scroll-down .btn_down{
+		font-size: 18px;
+		padding: 6px 8px;
+	}
 
 @media only screen and (max-width : 480px) {
 	
@@ -81,6 +125,16 @@
 		color: #e5e5e5;
 		border-radius: 5px;
 		border: 1px solid #494949;
+		-webkit-transition: all .5s;
+		   -moz-transition: all .5s;
+		    -ms-transition: all .5s;
+		     -o-transition: all .5s;
+		        transition: all .5s;
+	}
+
+	.btn_menu i:hover{
+		background-color: #fff;
+		color: #222;
 	}
 
 	.menu-top li{
@@ -91,37 +145,36 @@
 		margin-left: -50px;
 	}
 
-}
+	.title-top{
+		text-align: center;
+		color: #fff;
+		position: absolute;;
+		top: 30%;
+	    left: 50%;
+	    height: 20%;
+	    width: 50%;
+	    margin: -10% 0 0 -25%;
+	}
 
-@media only screen and (max-width : 320px) {
-	
-	/*TOP MENU*/
+	.title-top h3{
+		font-size: 35px;
+	}
+
+	.title-top p{
+		font-size: 15px;
+	}
+
+	.title-top img{
+		width: 100px;
+	}
+
+	.line-horiz{
+		margin: 3px auto;
+  		max-width: 100px;
+	}
+
 	.brand{
-		width: 200px;
-		margin-left: 10px;
+		width: 160px;
 	}
-
-	.block_top{
-		margin: 0;
-		background-color: #222222;
-	}
-
-	.btn_menu i{
-		background-color: #222222;
-		padding: 10px;
-		color: #e5e5e5;
-		border-radius: 5px;
-		border: 1px solid #494949;
-	}
-
-	.menu-top li{
-		display: block;
-		margin: 0;
-		height: 40px;
-		line-height: 40px;
-		margin-left: -50px;
-	}
-
 }
-
 
