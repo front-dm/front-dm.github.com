@@ -1,4 +1,5 @@
-$(document).ready(function(){
+//$(document).ready(function(){
+(function($) {
 /*======CAROUSEL=========*/
     var owl = $('.owl-carousel');
 
@@ -43,6 +44,6 @@ $(document).ready(function(){
     });
 
    
-});
+})(jQuery);
 
 /**/
