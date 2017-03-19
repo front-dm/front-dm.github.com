@@ -30,8 +30,19 @@ $(document).ready(function(){
     /*==============*/
 
     $('.scroll-down a').click(function(event) {
-        $('html, body').animate({scrollTop: $('#about').offset().top},'slow');
+        $('html, body').animate({scrollTop: $('#about').offset().top},500);
     });
+
+    $(document).scroll(function(event) {
+        if($(window).scrollTop() >= 200) {
+            $('header nav').addClass('onScrollTop');
+        }
+        else {
+            $('header nav').removeClass('onScrollTop');
+        }
+    });
+
+   
 });
 
 /**/

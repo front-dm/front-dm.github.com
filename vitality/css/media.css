@@ -45,6 +45,18 @@
 	}
 	
 	/*TOP MENU*/
+
+	.onScrollTop{
+		background-color: #222222;
+		height: 90px;
+		padding-top: 30px;
+		-webkit-transition: all .5s;
+		   -moz-transition: all .5s;
+		    -ms-transition: all .5s;
+		     -o-transition: all .5s;
+		        transition: all .5s;
+	}
+
 	.brand{
 		width: 200px;
 		margin-left: 10px;
@@ -146,6 +158,17 @@
 	/*TOP MENU*/
 	header{
 		min-height: 400px;
+	}
+
+	.onScrollTop{
+		background-color: #222222;
+		height: 90px;
+		padding-top: 30px;
+		-webkit-transition: all .5s;
+		   -moz-transition: all .5s;
+		    -ms-transition: all .5s;
+		     -o-transition: all .5s;
+		        transition: all .5s;
 	}
 
 	.brand{
