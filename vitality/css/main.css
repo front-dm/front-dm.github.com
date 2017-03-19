@@ -271,3 +271,46 @@ header{
 .item-carousel .wrap a:focus{
 	color: #fff;
 }
+
+/*DESIGN*/
+#design{
+	padding: 250px 0;
+	text-align: center;
+	color: #fff;
+	font-family: Roboto-Regular;
+	background-image: url(../img/bg-aside.jpg);
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+
+#design p{
+	font-size: 38px;
+	padding: 0 100px;
+}
+
+#design span{
+	color: #de4337;
+}
+
+#design .btn-work{
+	border: 1px solid white;
+	padding: 10px 20px;
+	margin-top: 20px;
+	font-size: 16px;
+	background-color: rgba(0,0,0,0);
+	text-transform: uppercase;
+	font-family: Roboto-Black;
+	-webkit-transition: all .5s;
+	   -moz-transition: all .5s;
+	    -ms-transition: all .5s;
+	     -o-transition: all .5s;
+	        transition: all .5s;
+}
+
+#design .btn-work:hover{
+	background-color: rgba(255,255,255,1);
+	color: #de4337;
+}
+	
