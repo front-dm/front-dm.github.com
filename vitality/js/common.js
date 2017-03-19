@@ -1,5 +1,5 @@
-/*CAROUSEL*/
 $(document).ready(function(){
+/*======CAROUSEL=========*/
     var owl = $('.owl-carousel');
 
     owl.owlCarousel(
@@ -27,6 +27,11 @@ $(document).ready(function(){
         owl.trigger('next.owl.carousel', [300]);
     })
 
+    /*==============*/
+
+    $('.scroll-down a').click(function(event) {
+        $('html, body').animate({scrollTop: $('#about').offset().top},'slow');
+    });
 });
 
 /**/
