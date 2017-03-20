@@ -313,4 +313,48 @@ header{
 	background-color: rgba(255,255,255,1);
 	color: #de4337;
 }
-	
+
+/*PROCESS*/
+
+#process{
+	padding: 70px 0;
+}
+
+#process .title-blocks p{
+	margin-top: 20px;
+}
+
+.block-proccess{
+}
+
+.item-process div{
+	display: inline-block;
+}
+
+.item-process .left-img{
+	float: left;
+	font-size: 70px;
+	vertical-align: top;
+	margin-right: 10px;
+}
+
+.item-process .center-body{
+	margin-left: 20px;
+}
+
+.item-process .center-body h3{
+	font-family: Roboto-Black;
+}
+
+.item-process .center-body li{
+	margin-left: -25px;
+	font-size: 16px;
+	color: #373737;
+	padding: 5px 0;
+}
+
+/*WORK*/
+#work{
+	padding: 70px 0;
+	background-color: #F5F5F5;
+}

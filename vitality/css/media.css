@@ -21,6 +21,11 @@
 	#design p{
 		padding: 0;
 	}
+
+	.item-process .left-img{
+		font-size: 60px;
+	}
+
 }
 
 /* Small Devices, Tablets */
@@ -159,6 +164,12 @@
 		font-size: 30px;
 		padding: 0 20px;
 	}
+
+	.item-process .left-img{
+		font-size: 50px;
+	}
+
+
 }
 
 @media only screen and (max-width : 480px) {
@@ -292,6 +303,18 @@
 	#design p{
 		font-size: 24px;
 		padding: 0 20px;
+	}
+
+	.item-process .left-img{
+		font-size: 40px;
+	}
+
+	.item-process .center-body{
+		margin-left: 0px;
+	}
+
+	.block-proccess{
+		margin-top: 50px;
 	}
 }
 
