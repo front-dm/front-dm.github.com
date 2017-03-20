@@ -37,6 +37,11 @@ header{
 	color: #545454;
 }
 
+.line-horiz{
+	margin: 3px auto;
+  	max-width: 200px;
+}
+
 /*========================*/
 
 /*MENU-TOP*/
@@ -294,7 +299,7 @@ header{
 	color: #de4337;
 }
 
-#design .btn-work{
+.btn-work{
 	border: 1px solid white;
 	padding: 10px 20px;
 	margin-top: 20px;
@@ -309,7 +314,7 @@ header{
 	        transition: all .5s;
 }
 
-#design .btn-work:hover{
+.btn-work:hover{
 	background-color: rgba(255,255,255,1);
 	color: #de4337;
 }
@@ -357,4 +362,35 @@ header{
 #work{
 	padding: 70px 0;
 	background-color: #F5F5F5;
+}
+
+.item-slide{
+	background-image: url(../img/bg-1.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	padding: 70px;
+}
+
+.right-body{
+	color: #fff;
+	margin-top: 5%;
+}
+
+.right-body h3{
+	font-size: 50px;
+	font-family: Roboto-Black;
+}
+
+.right-body p{
+	font-size: 18px;
+}
+
+.right-body .line-horiz{
+	margin: 2px 0;
+  	max-width: 200px;
+}
+
+.right-body button{
+	margin-bottom: 50px;
 }

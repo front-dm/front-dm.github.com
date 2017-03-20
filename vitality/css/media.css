@@ -26,6 +26,14 @@
 		font-size: 60px;
 	}
 
+	.right-body{
+		text-align: center;
+	}
+
+	.right-body .line-horiz{
+		margin: 2px auto;
+	}
+
 }
 
 /* Small Devices, Tablets */
@@ -168,6 +176,15 @@
 	.item-process .left-img{
 		font-size: 50px;
 	}
+
+	.right-body{
+		text-align: center;
+	}
+
+	.right-body .line-horiz{
+		margin: 2px auto;
+	}
+
 
 
 }
@@ -316,5 +333,26 @@
 	.block-proccess{
 		margin-top: 50px;
 	}
+
+	.right-body{
+		text-align: center;
+	}
+
+	.right-body .line-horiz{
+		margin: 2px auto;
+	}
+
+	.right-body h3{
+		font-size: 28px;
+	}
+
+	.right-body p{
+		font-size: 14px;
+	}
+
+	.item-slide img{
+		display: none;
+	}
+
 }
 
