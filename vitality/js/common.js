@@ -1,4 +1,4 @@
-//$(document).ready(function(){
+$(document).ready(function(){
     (function($) {
         /*======CAROUSEL=========*/
         var owl = $('.owl-carousel');
@@ -20,13 +20,16 @@
             loop: true
         });
 
+        $('.owl-carousel2').owlCarousel();
+
+
         $('.btn-prev').click(function() {
             owl.trigger('prev.owl.carousel', [300]);
-        })
+        });
 
         $('.btn-next').click(function() {
             owl.trigger('next.owl.carousel', [300]);
-        })
+        });
 
         /*==============*/
 
@@ -50,6 +53,7 @@
             return false;   
         }); 
 
-    })(jQuery);
 
+    })(jQuery);
+});
 /**/
