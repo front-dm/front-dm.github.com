@@ -71,7 +71,8 @@ header{
 	font-size: 16px;
 }
 
-.menu-top li a{
+.menu-top li a,
+.menu-top li a:focus{
 	color: #fff;
 	margin: 0 15px;
 	-webkit-transition: all .50s;
@@ -79,10 +80,10 @@ header{
 	-ms-transition: all .50s;
 	-o-transition: all .50s;
 	transition: all .50s;
+	text-decoration: none;
 }
 
-.menu-top li a:hover,
-.menu-top li a:focus{
+.menu-top li a:hover{
 	text-decoration: none;
 	color: #8B8B8B;
 }
@@ -442,4 +443,52 @@ header{
 
 .item-portfolio:hover .wrap-port{
 	bottom: 0;
+}
+
+/*FOOTER*/
+footer{
+	padding: 70px 0;
+	background-image: url(../img/bg-footer.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+
+.item-footer{
+	text-align: center;
+	color: #D3D3D2;
+	font-size: 20px;
+	margin-top: 100px;
+}
+
+.item-footer .head{
+	font-family: Roboto-Black;
+}
+
+.item-link{
+	font-size: 18px;
+	text-align: center;
+	margin: 50px 0;
+}
+
+.item-link i{
+	color: #D3D3D2;
+	margin-bottom: 30px;
+	-webkit-transition: all .5s;
+	   -moz-transition: all .5s;
+	    -ms-transition: all .5s;
+	     -o-transition: all .5s;
+	        transition: all .5s;
+
+}
+
+.item-link i:hover,
+.item-link i:focus{
+	color: #fff;
+}
+
+.text-footer{
+	text-align: center;
+	color: #D3D3D2;
+	margin-bottom: -40px;
 }
