@@ -354,5 +354,13 @@
 		display: none;
 	}
 
+	footer{
+		padding: 0;
+	}
+
+	.text-footer{
+		padding-bottom: 30px;
+	}
+
 }
 
