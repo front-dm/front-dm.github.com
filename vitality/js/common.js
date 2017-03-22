@@ -1,5 +1,4 @@
-$(document).ready(function(){
-    (function($) {
+(function($) {
         /*======CAROUSEL=========*/
         var owl = $('.owl-carousel');
 
@@ -19,9 +18,6 @@ $(document).ready(function(){
             },
             loop: true
         });
-
-        $('.owl-carousel2').owlCarousel();
-
 
         $('.btn-prev').click(function() {
             owl.trigger('prev.owl.carousel', [300]);
@@ -53,7 +49,9 @@ $(document).ready(function(){
             return false;   
         }); 
 
+        $('.btn-color i').click(function(event) {
+                $('#choose-color').toggleClass('open');
+        })
 
     })(jQuery);
-});
 /**/

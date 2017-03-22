@@ -492,3 +492,64 @@ footer{
 	color: #D3D3D2;
 	margin-bottom: -40px;
 }
+
+/*CHOOSER*/
+#choose-color{
+	width: 300px;
+	height: 150px;
+	position: fixed;
+	left: -250px;
+	top: 20%;
+	z-index: 2;
+	-webkit-transition: all .5s;
+	   -moz-transition: all .5s;
+	    -ms-transition: all .5s;
+	     -o-transition: all .5s;
+	        transition: all .5s;
+}
+
+
+#choose-color.open{
+	left: 0;
+}
+
+#choose-color div{
+	display: inline-block;
+}
+
+.colors{
+	padding: 20px;
+	width: 250px;
+	background-color: #fff;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.colors ul{
+	margin-left: -40px;
+}
+
+.colors p{
+	font-size: 22px;
+	font-family: Roboto-Black;
+}
+
+.colors li{
+	width: 30px;
+	height: 30px;
+	margin: 2px;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.btn-color{
+	background-color: #fff;
+	font-size: 30px;
+	padding: 10px 15px;
+	margin-left: -20px;
+	float: right;
+	margin-top: 55px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	cursor: pointer;
+}
