@@ -1,0 +1,70 @@
+html,body {
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+	width: 100%;
+	height: 100%;			
+}
+
+#header{
+	background-image: url(../img/banner.jpg);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+
+.title-top{
+	text-align: center;
+	vertical-align: middle;
+	color: #ddd;
+	margin-top: 10%;
+}
+
+.title-top h3{
+	color: #ddd;
+	font-size: 50px;
+	padding: 0 10%;
+	font-family: Lato-Light;
+}
+
+.title-top p{
+	font-family: Lato-Thin;
+	font-size: 30px;
+	padding: 0 10%;
+	margin-bottom: 50px;
+}
+
+a.link{
+	color: #fff;
+	border-bottom: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: rgba(255,255,255,1);	
+	-webkit-transition: all .5s;
+	   -moz-transition: all .5s;
+	    -ms-transition: all .5s;
+	     -o-transition: all .5s;
+	        transition: all .5s;
+}
+
+a.link:hover,
+a.link:focus{
+	color: #fff;
+	border-bottom-color: rgba(255,255,255,0);
+	text-decoration: none;
+}
+
+a.btn-top{
+	padding: 20px 40px;
+	background-color: #83afad;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 5px !important;
+}
+
+a.btn-top:hover,
+a.btn-top:focus{
+	color: #fff;
+	text-decoration: none;	
+}
