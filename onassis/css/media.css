@@ -53,6 +53,18 @@
 	.items-work img{
 		margin-bottom: 30px;
 	}
+
+	.title-top h1{
+		font-size: 70px;
+	}
+
+	.title-top p{
+		font-size: 30px;
+	}
+
+	.title-about p{
+		padding: 50px 0;
+	}
 }
 
 @media only screen and (max-width : 320px) {
@@ -63,6 +75,18 @@
 
 	.items-work img{
 		margin-bottom: 30px;
+	}
+
+	.title-top h1{
+		font-size: 70px;
+	}
+
+	.title-top p{
+		font-size: 30px;
+	}
+
+	.title-about p{
+		padding: 50px 0;
 	}
 }
 
