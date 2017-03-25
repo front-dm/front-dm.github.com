@@ -229,12 +229,16 @@ a.btn-top:focus{
 
 .item-port img{
 	width: 100%;
-	margin-bottom: 30px;
 }
 
-.item-port p{
-	padding: 20px 0;
-	margin-top: -30px;
+.link-port{
+	font-size: 20px;
+	color: #000;
+}
+
+.link-port:hover,
+.link-port:focus{
+
 }
 
 /*ABOUT*/
