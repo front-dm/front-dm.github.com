@@ -3,7 +3,7 @@
 	$('.item-port').click(function(event) {
 		var linkTo = $(this).data('url');
 		var currentLink = window.location.hostname;
-		window.location.href = currentLink + "/template/" + linkTo + "/index.html";
+		window.open(currentLink + "/template/" + linkTo + "/index.html",'_blank');
 	});
 	
 	//NAVIGATION
