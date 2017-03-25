@@ -153,6 +153,7 @@ html,body {
 #header{
 	background-image: url(../img/banner.jpg);
 	height: 100%;
+	min-height: 420px;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center;
