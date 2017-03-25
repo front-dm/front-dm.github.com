@@ -99,6 +99,13 @@
 		font-size: 20px;
 	}
 
+	.wrap i{
+		top: 50%; left: 50%;
+		font-size: 40px;
+		color: rgba(255,255,255,.8);
+		margin: -20px 0 0 -20px;
+	}
+
 }
 
 @media only screen and (max-width : 320px) {
@@ -134,6 +141,13 @@
 
 	.contact-body p{
 		font-size: 20px;
+	}
+
+	.wrap i{
+		top: 50%; left: 50%;
+		font-size: 40px;
+		color: rgba(255,255,255,.8);
+		margin: -20px 0 0 -20px;
 	}
 
 }

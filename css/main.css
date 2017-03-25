@@ -38,10 +38,15 @@ html,body {
 	line-height: 10px;
 }
 
-.items-menu ul{
-	margin-top: 50px;
-	display: block;
+.items-menu{
+	position: absolute;
 	width: 100%;
+}
+
+.items-menu ul{
+	margin: 0;
+	padding: 0;
+	margin-top: 50px;
 }
 
 .items-menu ul li{
@@ -223,22 +228,41 @@ a.btn-top:focus{
 .item-port{
 	margin: 30px;
 	background-color: #fff;
-	-webkit-box-shadow: 0 0 10px 1px rgba(0,0,0,.1);
-	box-shadow: 0 0 10px 1px rgba(0,0,0,.1);
+	-webkit-box-shadow: 0 0 10px 3px rgba(0,0,0,.1);
+	box-shadow: 0 0 10px 3px rgba(0,0,0,.1);
+	position: relative;
 }
 
 .item-port img{
 	width: 100%;
 }
 
-.link-port{
-	font-size: 20px;
-	color: #000;
+.item-port:hover .wrap{
+	opacity: 1;
 }
 
-.link-port:hover,
-.link-port:focus{
+.wrap{
+	opacity: 0;
+	left: 0; top: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.8);
+	cursor: pointer;
+	-webkit-transition: all .5s;
+	   -moz-transition: all .5s;
+	    -ms-transition: all .5s;
+	     -o-transition: all .5s;
+	        transition: all .5s;
+}
 
+.wrap i{
+	display: block;
+	top: 50%; left: 50%;
+	position: absolute;
+	font-size: 80px;
+	color: rgba(255,255,255,.8);
+	margin: -40px 0 0 -40px;
 }
 
 /*ABOUT*/
@@ -330,4 +354,5 @@ footer p{
 	text-align: center;
 	font-size: 16px;
 	color: rgba(0,0,0,0.5);
+	padding: 0 15px;
 }
