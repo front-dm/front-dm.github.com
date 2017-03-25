@@ -5,7 +5,16 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	#left{
+		left: -20%;
+		background-color: #212528;
+	}
 
+	#right{
+		height: 100%;
+		width: 100%;
+		float: right;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -73,6 +82,23 @@
 		margin-bottom: 50px;
 	}
 
+	a.btn-top{
+		padding: 20px 30px;
+		font-size: 18px;
+	}
+
+	.port-body p{
+		font-size: 20px;
+	}
+
+	.about-body p{
+		font-size: 20px;
+	}
+
+	.contact-body p{
+		font-size: 20px;
+	}
+
 }
 
 @media only screen and (max-width : 320px) {
@@ -91,6 +117,23 @@
 		font-size: 15px;
 		padding: 0 15px;
 		margin-bottom: 50px;
+	}
+
+	a.btn-top{
+		padding: 20px 30px;
+		font-size: 18px;
+	}
+
+	.port-body p{
+		font-size: 20px;
+	}
+
+	.about-body p{
+		font-size: 20px;
+	}
+
+	.contact-body p{
+		font-size: 20px;
 	}
 
 }
