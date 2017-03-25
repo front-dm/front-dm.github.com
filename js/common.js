@@ -18,8 +18,15 @@
 	
 	//LINK TO ANCHOR
 		var hrefMenu = '#' + $(this).data('url');
+		$('.open-menu').trigger('click');
 		$('html,body').animate({scrollTop: $(hrefMenu).offset().top}, 500);
 	});
 
+	//OPEN LEFT MENU
+	$('.open-menu').on('click',function(event) {
+		$('#left').toggleClass('open');
+		$('#right').toggleClass('open');
+		$(this).toggleClass('open');
+	});
 
 })()

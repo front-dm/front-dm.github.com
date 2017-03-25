@@ -3,11 +3,63 @@
 
 }
 
+@media only screen and (max-height: 470px){
+	.title-top{
+		text-align: center;
+		vertical-align: middle;
+		color: #ddd;
+		margin-top: 5%;
+	}
+
+	.title-top h3{
+		color: #ddd;
+		font-size: 42px;
+		padding: 0 10%;
+		font-family: Lato-Light;
+	}
+
+	.title-top p{
+		font-family: Lato-Thin;
+		font-size: 24px;
+		padding: 0 10%;
+		margin-bottom: 50px;
+	}
+
+	.soc-items{
+		top: 0; right: 0;
+		margin-top: 37px;
+	}
+
+	.soc-items li{
+		display: block;
+		margin-right: -110px;
+		margin-bottom: 7px;
+	}
+
+	.soc-items li a{
+		font-size: 16px;
+	}
+	
+	.items-menu ul{
+		margin-top: 20px;
+	}
+
+	.items-menu ul li{
+		font-size: 14px;
+		padding: 10px 50px 10px 0;
+	}
+
+}
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 	#left{
-		left: -30%;
+		left: -100%;
 		background-color: #212528;
+	}
+
+	#left.open{
+		left: 0;
 	}
 
 	#right{
@@ -15,6 +67,23 @@
 		width: 100%;
 		float: right;
 	}
+
+	#right.open{
+
+	}
+
+	.open-menu{
+		opacity: 1;
+		-webkit-transition: all .5s;
+		   -moz-transition: all .5s;
+		    -ms-transition: all .5s;
+		     -o-transition: all .5s;
+		        transition: all .5s;
+	}
+
+	.open-menu.open{
+		left: 200px;
+	} 
 }
 
 /* Small Devices, Tablets */
@@ -43,7 +112,7 @@
 	}
 
 	.title-top{
-		margin-top: 20%;
+		margin-top: 12%;
 	}
 
 	.title-top h3{
@@ -66,7 +135,7 @@
 
 @media only screen and (max-width : 480px) {
 	.title-top{
-		margin-top: 30%;
+		margin-top: 10%;
 	}
 	.title-top h3{
 		color: #ddd;
@@ -110,7 +179,7 @@
 
 @media only screen and (max-width : 320px) {
 	.title-top{
-		margin-top: 30%;
+		margin-top: 20%;
 	}
 	.title-top h3{
 		color: #ddd;

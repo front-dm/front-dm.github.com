@@ -8,11 +8,13 @@ html,body {
 #left{
 	height: 100%;
 	width: 20%;
+	min-width: 200px;
 	float: left;
 	position: fixed;
 	text-align: right;
 	font-family: Lato-Thin;
 	background-color: #212528;
+	z-index: 2;
 	-webkit-transition: all .5s;
 	   -moz-transition: all .5s;
 	    -ms-transition: all .5s;
@@ -41,6 +43,7 @@ html,body {
 .items-menu{
 	position: absolute;
 	width: 100%;
+	z-index: 3;
 }
 
 .items-menu ul{
@@ -114,10 +117,27 @@ html,body {
 
 
 /*RIGHT*/
+.open-menu{
+	position: fixed;
+	top: 0; left: 0;
+	padding: 5px 10px;
+	margin: 10px;
+	border-radius: 5px;
+	color: rgba(0,0,0,.8);
+	background-color: rgba(0,0,0,.2);
+	opacity: 0;
+	z-index: 2;
+}
+
+.open-menu:hover{
+	color: rgba(255,255,255,.8);
+	cursor: pointer;
+}
 
 #right{
 	height: 100%;
 	width: 80%;
+	min-width: 200px;
 	float: right;
 	-webkit-transition: all .5s;
 	   -moz-transition: all .5s;
