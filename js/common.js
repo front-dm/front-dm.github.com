@@ -29,4 +29,9 @@
 		$(this).toggleClass('open');
 	});
 
+	//GO TO PORTFOLIO
+	$('.btn-top').click(function(event) {
+		$('html,body').animate({scrollTop: $('#portfolio').offset().top}, 500);
+	});
+
 })()
