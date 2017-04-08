@@ -22,16 +22,7 @@
     </head>
     <body>
       <header id="main">
-        <div class="video-container">
-          <div class="filter"></div>
-          <video autoplay loop class="fillWidth">
-          <source src="video-bg/MP4/Morning-Routine.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-            <source src="video-bg/WEBM/Morning-Routine.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-          </video>
-          <div class="poster hidden">
-            <img src="video-bg/Snapshots/Morning-Routine.jpg" alt="">
-          </div>
-        </div>
+
         <div class="container">
           <div class="row main-head">
             <div class="col-xs-6 main-logo">
@@ -240,36 +231,37 @@
             <div class="col-md-10">
               <div class="services-info tab-content">
                 <div id="app" class="row tab-pane fade in active" role="tabpanel">
-                  <div class="col-sm-8">
+                  <div class="col-sm-4 col-sm-push-8 col-xs-12 services-block-img">
+                    <img src="img/services/info-1.png" alt="info1">
+                  </div>
+                  <div class="col-sm-8 col-sm-pull-4 col-xs-12">
                     <h4>Modern App Design</h4>
                     <span class="services-line"></span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.</p>
                     <button class="services-btn"><span class="btn-plus"></span> Know More</button>
                   </div>
-                  <div class="col-sm-4 services-block-img">
-                    <img src="img/services/info-1.png" alt="info1">
-                  </div>
+                  
                 </div><!-- /row -->
                 <div id="global" class="row tab-pane fade" role="tabpanel">
-                  <div class="col-sm-8">
+                  <div class="col-sm-4 col-sm-push-8 col-xs-12 services-block-img">
+                    <img class="img-responsive" src="img/services/info-2.png" alt="info1">
+                  </div>
+                  <div class="col-sm-8 col-sm-pull-4 col-xs-12">
                     <h4>Modern Global Design</h4>
                     <span class="services-line"></span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.</p>
                     <button class="services-btn"><span class="btn-plus"></span> Know More</button>
                   </div>
-                  <div class="col-sm-4">
-                    <img class="img-responsive" src="img/services/info-2.png" alt="info1">
-                  </div>
                 </div><!-- /row -->
                 <div id="web" class="row tab-pane fade" role="tabpanel">
-                  <div class="col-sm-8">
+                  <div class="col-sm-4 col-sm-push-8 col-xs-12 services-block-img">
+                    <img class="img-responsive" src="img/services/info-3.png" alt="info1">
+                  </div>
+                  <div class="col-sm-8 col-sm-pull-4 col-xs-12">
                     <h4>Modern Web Design</h4>
                     <span class="services-line"></span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.</p>
                     <button class="services-btn"><span class="btn-plus"></span> Know More</button>
-                  </div>
-                  <div class="col-sm-4">
-                    <img class="img-responsive" src="img/services/info-3.png" alt="info1">
                   </div>
                 </div><!-- /row -->
               </div>
@@ -586,7 +578,7 @@
       <script src="slick/slick.min.js"></script>
       <script src="js/wow.min.js "></script>
       <script>
-        new WOW().init();
+       /* new WOW().init();*/
       </script>
       <script>
         $(document).ready(function(){
@@ -633,70 +625,5 @@
 
       </script>
 
-      <script>
-        //jQuery is required to run this code
-        $( document ).ready(function() {
-
-            scaleVideoContainer();
-
-            initBannerVideoSize('.video-container .poster img');
-            initBannerVideoSize('.video-container .filter');
-            initBannerVideoSize('.video-container video');
-
-            $(window).on('resize', function() {
-                scaleVideoContainer();
-                scaleBannerVideoSize('.video-container .poster img');
-                scaleBannerVideoSize('.video-container .filter');
-                scaleBannerVideoSize('.video-container video');
-            });
-
-        });
-
-        function scaleVideoContainer() {
-
-            var height = $(window).height() + 5;
-            var unitHeight = parseInt(height) + 'px';
-            $('.homepage-hero-module').css('height',unitHeight);
-
-        }
-
-        function initBannerVideoSize(element){
-
-            $(element).each(function(){
-                $(this).data('height', $(this).height());
-                $(this).data('width', $(this).width());
-            });
-
-            scaleBannerVideoSize(element);
-
-        }
-
-        function scaleBannerVideoSize(element){
-
-            var windowWidth = $(window).width(),
-            windowHeight = $(window).height() + 5,
-            videoWidth,
-            videoHeight;
-
-            // console.log(windowHeight);
-
-            $(element).each(function(){
-                var videoAspectRatio = $(this).data('height')/$(this).data('width');
-
-                $(this).width(windowWidth);
-
-                if(windowWidth < 1000){
-                    videoHeight = windowHeight;
-                    videoWidth = videoHeight / videoAspectRatio;
-                    $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
-
-                    $(this).width(videoWidth).height(videoHeight);
-                }
-
-                $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
-
-            });
-        }
-      </script>
     </body>
     </html>

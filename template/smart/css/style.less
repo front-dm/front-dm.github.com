@@ -613,11 +613,11 @@ footer {
 			}
 
 			button[type="submit"] {
-				background-color: #506eac;
+				background-color: @base-red;
 				padding: 15px 30px;
 				color: @white;
 				border: none;
-				border-bottom: 7px solid #364c71;
+				border-bottom: 7px solid darken(@base-red, 10%);
 			}
 		}
 	}
@@ -700,6 +700,7 @@ footer {
 	color: @white;
 	margin: 20px;
 	cursor: pointer;
+	z-index: 2;
 }
 
 
@@ -744,48 +745,6 @@ footer {
 	
 }
 
-.no-video .video-container video,
-.touch .video-container video {
-    display: none;
-}
-.no-video .video-container .poster,
-.touch .video-container .poster {
-    display: block !important;
-}
-
-header {
-	position: relative;
-}
-
-.video-container {
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background: #000;
-}
-.video-container .poster img {
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-}
-.video-container .filter {
-    z-index: 100;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.4);
-    width: 100%;
-}
-.video-container video {
-    position: absolute;
-    z-index: 0;
-    bottom: 0;
-}
-.video-container video.fillWidth {
-    width: 100%;
-}
-
 /* Media Query */
 
 @media (min-width: 0px) and (max-width: 480px) {
@@ -809,6 +768,7 @@ header {
 
 	.services-list {
 		text-align: center;
+		padding: 0;
 		&-item {
 			display: inline-block;
 			width: 80px;
@@ -846,7 +806,42 @@ header {
 				background-color: @base-red;
 			}
 		}
-}
+	}
+
+	.services {
+		&-info {
+			text-align: center;
+			h4 {
+				font-size: 22px;
+			}
+
+			p {
+				font-size: 16px;
+			}
+		}
+		&-btn {
+				margin-top: 20px;
+		}
+	}
+
+	.contact {
+		&-box {
+			&-body {
+				textarea {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.slick-dots {
+		margin-bottom: 0px;
+	}
+
+	.close-port-modal {
+		color: @base-red;
+		margin-right: 30px;
+	}
 
 }
 
@@ -863,12 +858,43 @@ header {
 	}
 
 	.services-block-img{
-		margin-top: 50px;
+		margin-top: 80px;
 		text-align: center;
 		margin: 0 auto;
 		img {
 			width: 300px;
 		}
+	}
+
+	.services {
+		&-info {
+			text-align: center;
+			h4 {
+				font-size: 22px;
+			}
+
+			p {
+				font-size: 16px;
+			}
+		}
+		&-btn {
+				margin-top: 20px;
+		}
+	}
+
+	.contact {
+		&-box {
+			&-body {
+				textarea {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.close-port-modal {
+		color: @base-red;
+		margin-right: 30px;
 	}
 }
 
