@@ -764,6 +764,9 @@ footer {
     color: #fc6744;
     margin-right: 30px;
   }
+  .video-container {
+    display: none;
+  }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .process-box {
@@ -802,6 +805,9 @@ footer {
     color: #fc6744;
     margin-right: 30px;
   }
+  .video-container {
+    display: none;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .process-box {
@@ -812,6 +818,9 @@ footer {
   }
   .services-list-item {
     display: inline-block;
+  }
+  .video-container {
+    display: none;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
