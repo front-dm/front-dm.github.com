@@ -33,6 +33,47 @@ header {
   background-size: cover;
   min-height: 700px;
   height: 100vh;
+  position: relative;
+}
+.homepage-hero-module {
+  border-right: none;
+  border-left: none;
+  position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
+}
+.video-container {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+.video-container .poster img {
+  width: 100%;
+  top: 0;
+  position: absolute;
+}
+.video-container .filter {
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+}
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+}
+.video-container video.fillWidth {
+  width: 100%;
 }
 body {
   font-size: 14px;
