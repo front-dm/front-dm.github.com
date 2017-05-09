@@ -12,13 +12,13 @@ var NoteEditor = React.createClass({
     getInitialState: function () {
         return {
             text: '',
-            color: 'yellow'
+            color: 'yellow',
         };
     },
 
     handleTextChange: function (event) {
         this.setState({
-            text: event.target.value
+            text: event.target.value,
         });
     },
 
@@ -30,7 +30,9 @@ var NoteEditor = React.createClass({
         };
 
         this.props.onNoteAdd(newNote);
-        this.setState({ text: ''});
+        this.setState({
+          text: ''
+        });
         this.removeClass();
     },
 
@@ -51,9 +53,9 @@ var NoteEditor = React.createClass({
 
     render: function () {
         return (<div className="note-editor">
-                <textarea 
-                    placeholder="Enter your note here..." 
-                    rows={5} 
+                <textarea
+                    placeholder="Enter your note here..."
+                    rows={5}
                     className="textarea"
                     value={this.state.text}
                     onChange={this.handleTextChange}
@@ -83,22 +85,31 @@ var NotesGrid = React.createClass({
     },
 
     componentDidUpdate: function (prevProps) {
-        if(this.props.notes.length !== prevProps.notes.length){
             this.msnry.reloadItems();
             this.msnry.layout();
-        }
-    }, 
+    },
 
     render: function () {
         var onNoteDelete = this.props.onNoteDelete;
+        var notes = this.props.notes;
+        var filteredNotes = this.props.filteredNotes;
+        var data = notes;
+
+        if(this.props.filterFlag){
+            data = filteredNotes
+        }else {
+            data = notes;
+        }
+
 
         return (<div className="note-grid" ref="grid">
                     {
-                        this.props.notes.map(function(note) {
-                            return <Note 
-                                        key={note.id} 
+                        data.map(function(note) {
+                            return <Note
+                                        key={note.id}
                                         color={note.color}
                                         onDelete={onNoteDelete.bind(null, note)}
+                                        tags={note.tags}
                                     > {note.text} </Note>
                         })
                     }
@@ -106,17 +117,31 @@ var NotesGrid = React.createClass({
     }
 });
 
+var SearchInput = React.createClass({
+    render: function () {
+        return (
+          <form onSubmit={this.props.onSubmitSearch}>
+            <input id="search" className="input-search" type="search" placeholder="Search..." onChange={this.props.onSearch} />
+          </form>
+          );
+    }
+});
+
 var NotesApp = React.createClass({
     getInitialState: function () {
         return {
-            notes: []
+            notes: [],
+            seacrh: '',
+            filtered: false
         };
     },
 
     componentDidMount: function () {
         var localNotes = JSON.parse(localStorage.getItem('notes'));
         if(localNotes){
-            this.setState({ notes: localNotes });
+            this.setState({
+                notes: localNotes,
+             });
         }
     },
 
@@ -127,7 +152,11 @@ var NotesApp = React.createClass({
     handleNoteAdd: function (newNote) {
         var newNotes = this.state.notes.slice();
         newNotes.unshift(newNote);
-        this.setState({ notes: newNotes});
+        this.setState({
+          notes: newNotes,
+          filtered: false
+        });
+        document.getElementById('search').value = '';
     },
 
     handleNoteDelete: function (note) {
@@ -140,18 +169,48 @@ var NotesApp = React.createClass({
         });
     },
 
+    handleSearchTags: function (event) {
+        this.setState({
+            search: event.target.value.toLowerCase(),
+            filtered: false
+        });
+    },
+
+    handleSubmitSearch: function (event) {
+        event.preventDefault();
+        var search = this.state.search;
+        var filteredNotes = this.state.notes.filter(function (note){
+            return note.text.toLowerCase().indexOf(search) !== -1;
+        });
+        if(search){
+          this.setState({
+            filteredNotes: filteredNotes,
+            filtered: true
+          });
+        }
+        else {
+          this.setState({
+            filtered: false
+          });
+        }
+    },
+
     render: function () {
         return (<div className="notes-app">
+                <SearchInput onSearch={this.handleSearchTags} onSubmitSearch={this.handleSubmitSearch}/>
                 <h2 className="app-header">NotesApp</h2>
                 <NoteEditor onNoteAdd={this.handleNoteAdd} />
-                <NotesGrid notes={this.state.notes} onNoteDelete={this.handleNoteDelete}/>
+                <NotesGrid  notes={this.state.notes}
+                            filteredNotes={this.state.filteredNotes}
+                            onNoteDelete={this.handleNoteDelete}
+                            filterFlag={this.state.filtered}/>
             </div>);
     },
 
     _updateLocalStorage: function () {
         var notes = JSON.stringify(this.state.notes);
         localStorage.setItem("notes", notes);
-    }           
+    }
 });
 
 ReactDOM.render(<NotesApp />, document.getElementById('content'));

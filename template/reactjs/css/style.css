@@ -28,6 +28,7 @@ body {
     width: 200px;
     height: auto;
     float: left;
+    text-align: left;
     background-color: yellow;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     border-radius: 2px;
@@ -86,6 +87,7 @@ body {
     font-size: 14px;
     border: none;
     font-weight: 300;
+    margin-bottom: 20px;
 }
 
 .textarea:focus {
@@ -129,6 +131,13 @@ body {
 .notes-app {
     width: 100%;
     min-width: 530px;
+    text-align: center;
+}
+
+.note-tags {
+    color: grey;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .app-header {
@@ -155,6 +164,17 @@ body {
     list-style-type: none;
     left: -20px;
     bottom: 0;
+}
+
+.input-search {
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+
+.input-search:focus {
+    outline: none;
 }
 
 

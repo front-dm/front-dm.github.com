@@ -21,7 +21,7 @@ var Clock = React.createClass({
 				seconds: 0
 			});
 		}
-		
+
 	},
 
 	startTimer: function (){
