@@ -163,7 +163,11 @@ html,body {
 	text-align: center;
 	vertical-align: middle;
 	color: #ddd;
-	margin-top: 10%;
+	margin-top: 3%;
+}
+
+.title-top img {
+	width: 200px;
 }
 
 .title-top h3{
