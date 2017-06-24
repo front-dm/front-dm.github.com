@@ -338,6 +338,27 @@ a.btn-top:focus{
 	padding: 0 30px;
 }
 
+.resume {
+	text-align: center;
+}
+
+.resume img {
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	--webkit-transition: padding .2s;
+	-o-transition: padding .2s;
+	transition: padding .2s;
+}
+
+.resume img:hover {
+	padding: 2px;
+}
+
+.resume p {
+	font-weight: bold;	
+	font-size: 10px;
+}
 /*CONTACT*/
 #contact{
 	margin-top: 3px;
