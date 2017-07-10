@@ -1,14 +1,32 @@
-@font-face{
-	font-family: Lato;
-	src: url(../fonts/Lato.ttf);
-}
-
-@font-face{
-	font-family: Lato-Thin;
-	src: url(../fonts/Lato-Thin.ttf);
-}
-
-@font-face{
-	font-family: Lato-Light;
-	src: url(../fonts/Lato-Light.ttf);
-}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RalewayRegular/RalewayRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewayRegular/RalewayRegular.woff") format("woff"), url("../fonts/RalewayRegular/RalewayRegular.ttf") format("truetype"); }
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/RalewayBold/RalewayBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewayBold/RalewayBold.woff") format("woff"), url("../fonts/RalewayBold/RalewayBold.ttf") format("truetype"); }
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/RalewayLight/RalewayLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewayLight/RalewayLight.woff") format("woff"), url("../fonts/RalewayLight/RalewayLight.ttf") format("truetype"); }
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/RalewaySemiBold/RalewaySemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewaySemiBold/RalewaySemiBold.woff") format("woff"), url("../fonts/RalewaySemiBold/RalewaySemiBold.ttf") format("truetype"); }
+@font-face {
+  font-family: "OldEnglishText";
+  font-style: normal;
+  src: url("../fonts/OldEnglishText/OldEnglishTextMT.eot.eot?#iefix") format("embedded-opentype"), url("../fonts/OldEnglishText/OldEnglishTextMT.woff") format("woff"), url("../fonts/OldEnglishText/OldEnglishTextMT.ttf") format("truetype"); }
+@font-face {
+  font-family: "FreestyleScript";
+  font-style: normal;
+  src: url("../fonts/FreestyleScript/FreestyleScript-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FreestyleScript/FreestyleScript-Regular.woff") format("woff"), url("../fonts/FreestyleScript/FreestyleScript-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "FontAwesome";
+  font-style: normal;
+  src: url("../fonts/FontAwesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/FontAwesome/fontawesome-webfont.woff") format("woff"), url("../fonts/FontAwesome/fontawesome-webfont.ttf") format("truetype"); }

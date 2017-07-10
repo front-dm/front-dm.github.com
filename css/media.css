@@ -1,217 +1,156 @@
+/*==========  Desktop First Method  ==========*/
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
 }
 
-@media only screen and (max-height: 470px){
-	.title-top{
-		text-align: center;
-		vertical-align: middle;
-		color: #ddd;
-		margin-top: 5%;
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.portfolio-item .bottom button {
+		padding: 5px 20px;
 	}
 
-	.title-top h3{
-		color: #ddd;
-		font-size: 36px;
-		padding: 0 3%;
-		font-family: Lato-Light;
-	}
-
-	.soc-items{
-		top: 0; right: 0;
-		margin-top: 37px;
-	}
-
-	.soc-items li{
-		display: block;
-		margin-right: -110px;
-		margin-bottom: 7px;
-	}
-
-	.soc-items li a{
+	.about-quote {
 		font-size: 16px;
 	}
-	
-	.items-menu ul{
-		margin-top: 20px;
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	.portfolio-item .bottom button {
+		padding: 10px 30px;
 	}
 
-	.items-menu ul li{
+	.about-quote {
 		font-size: 14px;
-		padding: 10px 50px 10px 0;
 	}
+
+	.about-content img {
+		width: 130px;
+	}
+
+	.footer .mail {
+		font-size: 16px;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.left-menu {
+		top: 30px;
+		margin-top: 0;
+		left: 50%;
+		margin-left: -70px;
+	}
+
+	.left-menu li {
+		display: inline-block;
+		margin-bottom: 2px;
+		margin-left: 5px;
+		margin-right: 5px;
+
+	}
+
+	.left-menu li.active {
+		margin-bottom: 0;
+	}
+
+	.portfolio h2 {
+		font-size: 30px;
+	}
+
+	.contact h2 {
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+
+	.footer h2 {
+		font-size: 30px;
+	}
+
+	.portfolio ul li {
+		font-size: 12px;
+		letter-spacing: 0
+	}
+
+	.portfolio-item .bottom button {
+		padding: 5px 20px;
+	}
+
+	.about-quote {
+		font-size: 12px;
+	}
+
+	.about-quote .left {
+		font-size: 20px;
+	}
+
+	.about-quote .right {
+		padding-right: 15px;
+	}
+
+	.about-content img {
+		width: 130px;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.parallax-header h1 {
+		font-size: 36px;
+	}
+
+	.parallax-about h1 {
+		font-size: 36px;
+	}
+
+	.portfolio ul li {
+		font-size: 9px;
+		display: block;
+	}
+
+	.portfolio-item .bottom button {
+		padding: 5px 15px;
+	}
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+	.parallax-header h1 {
+		text-align: center;
+		font-size: 36px;
+	}
+
+	.about-quote .right {
+		padding-right: 15px;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
 
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-	#left{
-		left: -100%;
-		background-color: #212528;
-	}
-
-	#left.open{
-		left: 0;
-	}
-
-	#right{
-		height: 100%;
-		width: 100%;
-		float: right;
-	}
-
-	#right.open{
-
-	}
-
-	.open-menu{
-		opacity: 1;
-		-webkit-transition: all .5s;
-		   -moz-transition: all .5s;
-		    -ms-transition: all .5s;
-		     -o-transition: all .5s;
-		        transition: all .5s;
-	}
-
-	.open-menu.open{
-		left: 200px;
-	} 
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-	
-	/*Disable Animation on Mobile Devices*/
-	.animated {
-		/*CSS transitions*/
-		-o-transition-property: none !important;
-		-moz-transition-property: none !important;
-		-ms-transition-property: none !important;
-		-webkit-transition-property: none !important;
-		transition-property: none !important;
-		/*CSS transforms*/
-		-o-transform: none !important;
-		-moz-transform: none !important;
-		-ms-transform: none !important;
-		-webkit-transform: none !important;
-		transform: none !important;
-		/*CSS animations*/
-		-webkit-animation: none !important;
-		-moz-animation: none !important;
-		-o-animation: none !important;
-		-ms-animation: none !important;
-		animation: none !important;
-	}
-
-	.title-top{
-		margin-top: 3%;
-	}
-
-	.title-top h3{
-		color: #ddd;
-		font-size: 40px;
-		padding: 0 15px;
-		font-family: Lato-Light;
-	}
-
-	.title-top p{
-		font-family: Lato-Thin;
-		font-size: 20px;
-		padding: 0 15px;
-		margin-bottom: 50px;
-	}
-
-
+@media only screen and (min-width : 992px) {
 
 }
 
-@media only screen and (max-width : 480px) {
-	.title-top{
-		margin-top: 10%;
-	}
-	.title-top h3{
-		color: #ddd;
-		font-size: 30px;
-		padding: 0 15px;
-		font-family: Lato-Light;
-	}
-
-	.title-top p{
-		font-family: Lato-Thin;
-		font-size: 15px;
-		padding: 0 15px;
-		margin-bottom: 50px;
-	}
-
-	a.btn-top{
-		padding: 20px 30px;
-		font-size: 18px;
-	}
-
-	.port-body p{
-		font-size: 20px;
-	}
-
-	.about-body p{
-		font-size: 20px;
-	}
-
-	.contact-body p{
-		font-size: 20px;
-	}
-
-	.wrap i{
-		top: 50%; left: 50%;
-		font-size: 40px;
-		color: rgba(255,255,255,.8);
-		margin: -20px 0 0 -20px;
-	}
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
 
 }
-
-@media only screen and (max-width : 320px) {
-	.title-top{
-		margin-top: 20%;
-	}
-	.title-top h3{
-		color: #ddd;
-		font-size: 26px;
-		padding: 0 15px;
-		font-family: Lato-Light;
-	}
-
-	.title-top p{
-		font-family: Lato-Thin;
-		font-size: 15px;
-		padding: 0 15px;
-		margin-bottom: 50px;
-	}
-
-	a.btn-top{
-		padding: 20px 30px;
-		font-size: 18px;
-	}
-
-	.port-body p{
-		font-size: 20px;
-	}
-
-	.about-body p{
-		font-size: 20px;
-	}
-
-	.contact-body p{
-		font-size: 20px;
-	}
-
-	.wrap i{
-		top: 50%; left: 50%;
-		font-size: 40px;
-		color: rgba(255,255,255,.8);
-		margin: -20px 0 0 -20px;
-	}
-
-}
-
-
