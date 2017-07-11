@@ -101,7 +101,6 @@ body textarea:required:valid
 	margin: 0
 	padding: 0
 	position: fixed
-	z-index: 9999
 	top: 50%
 	margin-top: -150px
 	margin-left: 20px
@@ -118,6 +117,7 @@ body textarea:required:valid
 		border-radius: 50%
 		cursor: pointer
 		transition: all .3s
+		animation-delay: 1
 	li.active
 		width: 20px
 		height: 20px
@@ -140,6 +140,7 @@ body textarea:required:valid
 			letter-spacing: 10px
 		ul 
 			padding: 0
+			margin-top: 15px
 			li
 				list-style-type: none
 				display: inline-block

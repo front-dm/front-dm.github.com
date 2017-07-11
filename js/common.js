@@ -26,14 +26,14 @@ $(document).ready(function() {
 	$('.img-responsive').magnificPopup({
 		type:'image'
 	});
-
-	$(".logo-text, .logo").addClass("animated zoomIn");
 	
 	$(".left-menu a").mPageScroll2id();
+
+	new WOW().init();
 
 });
 
 $(window).load(function() {
 	$(".loader_inner").fadeOut();
-	$(".loader").delay(400).fadeOut("slow");
+	$(".loader").delay(100).fadeOut("slow");
 });

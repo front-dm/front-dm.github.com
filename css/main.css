@@ -99,7 +99,6 @@ body textarea:required:valid {
   margin: 0;
   padding: 0;
   position: fixed;
-  z-index: 9999;
   top: 50%;
   margin-top: -150px;
   margin-left: 20px;
@@ -115,7 +114,8 @@ body textarea:required:valid {
     margin-bottom: 10px;
     border-radius: 50%;
     cursor: pointer;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    animation-delay: 1; }
   .left-menu li.active {
     width: 20px;
     height: 20px;
@@ -137,7 +137,8 @@ body textarea:required:valid {
       margin: 0;
       letter-spacing: 10px; }
     .portfolio-head ul {
-      padding: 0; }
+      padding: 0;
+      margin-top: 15px; }
       .portfolio-head ul li {
         list-style-type: none;
         display: inline-block;
