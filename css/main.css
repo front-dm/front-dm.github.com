@@ -43,9 +43,13 @@ body textarea:required:valid {
     position: absolute; }
 
 .parallax-header {
-  min-height: 640px;
-  background: transparent;
-  position: relative; }
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/header.jpeg");
+  min-height: 100%; }
   .parallax-header h1 {
     margin: 0;
     padding: 0;
@@ -175,9 +179,13 @@ body textarea:required:valid {
         outline: none; }
 
 .parallax-about {
-  min-height: 640px;
-  background: transparent;
-  position: relative; }
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/aboutme.jpg");
+  min-height: 100%; }
 
 .about {
   padding: 0;
@@ -244,9 +252,14 @@ body textarea:required:valid {
       float: right; }
 
 .parallax-footer {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/footer.jpg");
   min-height: 350px;
-  background: transparent;
-  position: relative; }
+  opacity: 0.9; }
 
 .footer {
   text-align: center;
