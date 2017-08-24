@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>UPS</title>
+	<script src="script.js"></script>
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			margin-top: 5px;
+		}
+
+		textarea {
+			width: 24%;
+			height: 500px;
+		}
+		button {
+			font-size: 14px;
+			padding: 5px;
+		}
+		.separate {
+			float: right;
+			margin-right: 10%;
+		}
+	</style>
+</head>
+<body>
+	<textarea id="first"></textarea>
+	<textarea id="second"></textarea>
+	<textarea id="third"></textarea>
+	<textarea id="fourth"></textarea>
+	<button onclick="startWorker()">Ok</button>
+	<button onclick="stopWorker()">Stop</button>
+	<button onclick="separate()" class="separate">Separate</button>
+</body>
+</html>
